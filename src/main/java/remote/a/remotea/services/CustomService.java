@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import remote.a.remotea.models.User;
 
 @Service
-public class UserService {
+public class CustomService {
 
     private final List<User> users = new ArrayList<>();
 
@@ -43,4 +43,3 @@ public class UserService {
         return users.removeIf(user -> user.getId().equals(id));
     }
 }
-
